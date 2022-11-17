@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+        
+        <!-- Meta Tag -->
+		<meta charset="utf-8">
+        
+        <!-- Title of tab -->
+		<title>Assignment 7</title>
+        
+        <!-- Title of page -->
+        <h1 style = "text-align: center">Arizona Population Density, 2019-2020</h1>
+        
+        <!-- D3.js Source -->
+        <script type="text/javascript" src="https://d3js.org/d3.v4.min.js"></script>
+        
+        <!-- Source to define color scale -->
+        <script src="https://d3js.org/d3-scale-chromatic.v1.min.js"></script>
+        
+        <!-- CSS Style Sheet -->
+        <link rel="stylesheet" type="text/css" href="arizona.css">
+        
+        <!-- Button Label -->
+        <div id="color-button">
+            <p>Change Color Scheme:</p>
+        </div>
+        
+        <!-- Button #1 (Blue Option) -->
+        <div id="button1">
+            <input type="button" value="Blue">
+        </div>
+        
+        <!-- Button #2 (Red Option) -->
+        <div id="button2">
+            <input type="button" value="Red">
+        </div>
+        
+        <!-- Toggle Label -->
+        <div id="toggle-button">
+            <h>Toggle County Boundary:</h>
+        </div>
+        
+        <!-- Toggle (Display Option) -->
+        <div id = "toggle">
+            <p>
+                <input type="radio" name="filterPreset" value="1"> Display
+                <input type="radio" name="filterPreset" value="0" checked="True"> No Display
+            </p>
+        </div>
+        
+        <!-- Tooltip Format -->
+        <div id="tooltip" class="hidden">
+            <pre style = "text-align: left;">County: <span id ="county"></span></pre>
+            <pre style = "text-align: left;">Population density: <span id ="density"></span></pre>
+        </div>
+        
+	</head>
+	<body>
+        
+        <!-- D3.js code for making map -->
+		<!--<script type="text/javascript" src="arizona.js"></script>-->
+        <script type="text/javascript" src="arizona.js"></script>
+
+        <!-- Submission Info-->
+        <h4>Submission Info:</h4> 
+        
+        <h>
+            Teresa Joseph<br>
+            Instructor: Suresh Lodha<br>
+            CSE 163: Data programming for Visualization<br>
+            Fall 2022
+        </h>
+        
+        <h4>Files Submitted:</h4>  
+        <ul>
+            <li>arizona.html</li>
+            <li>arizona.js</li>
+            <li>arizona.css</li>
+            <li>arizona-density.csv</li>
+            <li>arizona-counties.json</li>
+            <li>arizona.pdf</li>
+        </ul>
+      
+        <h4> Sources: </h4>
+        <ul>
+            <li>Textbook Chatper 12 (for radio selections) and Chapter 14 (for geomapping)</li>
+            <li>https://eric.clst.org/tech/usgeojson/ (for data on Arizona densities 2019-2020)</li>
+            <li>https://bl.ocks.org/mbostock/5562380 (for CA Pop Density Example)</li>
+            <li>https://d3-graph-gallery.com/graph/interactivity_button.html (for buttons)</li>
+            <li>https://stackoverflow.com/questions/16256454/d3-js-position-tooltips-using-element-position-not-mouse-position (for updating tooltip position)</li>
+            <li>https://stackoverflow.com/questions/16770763/mouse-position-in-d3 (for getting current mouse position for tooltips)</li>
+            <li>https://github.com/d3/d3-scale-chromatic (for using/understanding color scales)</li>
+            <li>https://stackoverflow.com/questions/22452112/nvd3-clear-svg-before-loading-new-chart (for clearing chart between displays)</li>
+
+        </ul>
+
+        <h4>Links: </h4>
+        <ul>
+            <li>
+                <a href="https://canvas.ucsc.edu/courses/57207/assignments/401029" target = "_blank"> Visualization</a>
+            </li>
+            <li>
+                <a href="https://github.com/tkj02/CSE163_Arizona_Pop_Density" target = "_blank"> GitHub</a>
+            </li>  
+        </ul>
+        
+	</body>
+</html>
